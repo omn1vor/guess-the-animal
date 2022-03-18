@@ -75,7 +75,9 @@ public class ImportExport {
     }
 
     private static String getFileName(Format format) {
-        return "animals_" + Locale.getDefault().getLanguage() + "." + format.name().toLowerCase();
+        boolean isEn = Locale.getDefault().getLanguage().equalsIgnoreCase(new Locale("en").getLanguage());
+        String postfix = isEn ? "" : "_" + Locale.getDefault().getLanguage();
+        return "animals" + postfix + "." + format.name().toLowerCase();
     }
 
     private static ObjectMapper getMapper(Format format) {

@@ -133,7 +133,7 @@ public class Node {
         while (parent != null) {
             if (!parent.isAnimal()) {
                 boolean isTrue = parent.getRight() == child;
-                facts.offerFirst(" - " + Vocabulary.getStr("It") + parent.getFact().getFact(isTrue));
+                facts.offerFirst(" - " + Vocabulary.getStr("It") + " " + parent.getFact().getFact(isTrue));
             }
             child = parent;
             parent = parent.getParent();
@@ -155,7 +155,7 @@ public class Node {
         System.out.printf("- %-28s %d%n", Vocabulary.getStr("total number of statements"), nodeCounts.count - nodeCounts.animalsCount);
         System.out.printf("- %-28s %d%n", Vocabulary.getStr("height of the tree"), nodeCounts.depth);
         System.out.printf("- %-28s %d%n", Vocabulary.getStr("minimum animal's depth"), nodeCounts.minAnimalDepth);
-        System.out.printf("- %-28s %.0f%n", Vocabulary.getStr("average animal's depth"), nodeCounts.avgAnimalDepth);
+        System.out.printf("- %-28s %.1f%n", Vocabulary.getStr("average animal's depth"), nodeCounts.avgAnimalDepth);
     }
 
     private Node findByAnimalName(Node node, String name)  {

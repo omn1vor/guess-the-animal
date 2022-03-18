@@ -31,7 +31,7 @@ public class Animals_eo extends ListResourceBundle {
                 {"DefinedArticle", "La"},
                 {"UndefinedArticleRegex", ""},
                 {"getUndefinedArticle", (UnaryOperator<String>) name -> ""},
-                {"factFormat", "(?i)Ĝi (povas|havas|estas) ([\\w\\s]+)[?.!]?"},
+                {"factFormat", "(?i)[Ĝĝ]i (povas|havas|estas|loĝas) ([\\w\\s]+)[?.!]?"},
                 {"factFormatError", "La ekzemploj de aserto:\n" +
                         " - Ĝi povas flugi\n" +
                         " - Ĝi havas kornojn\n" +
@@ -61,7 +61,7 @@ public class Animals_eo extends ListResourceBundle {
                         "4. Kalkuli statistikojn\n" +
                         "5. Printi la Sciarbon\n" +
                         "0. Eliri"},
-                {"Enter the animal:", "Eniru la beston:"},
+                {"Enter the animal:", "Enigu la besto:"},
                 {"game start", "Vi pensu pri besto, kaj mi divenos ĝin.\n" +
                         "Premu enen kiam vi pretas."},
                 {"Is it", "Ĉu ĝi estas"},
